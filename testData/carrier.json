@@ -1,0 +1,52 @@
+{
+  "rate": {
+    "origin": {
+      "country": "DE",
+      "postal_code": "48143",
+      "province": "",
+      "city": "Münster",
+      "name": null,
+      "address1": "Drubbel 3",
+      "address2": null,
+      "address3": null,
+      "phone": "",
+      "fax": null,
+      "email": null,
+      "address_type": null,
+      "company_name": "D2C Brand"
+    },
+    "destination": {
+      "country": "DE",
+      "postal_code": "40210",
+      "province": null,
+      "city": "Hamburg",
+      "name": "Lennart Weihs",
+      "address1": "Kieler Straße 3",
+      "address2": "",
+      "address3": null,
+      "phone": null,
+      "fax": null,
+      "email": null,
+      "address_type": null,
+      "company_name": null
+    },
+    "items": [
+      {
+        "name": "Cola",
+        "sku": "12312414123123123",
+        "quantity": 1,
+        "grams": 0,
+        "price": 98,
+        "vendor": "Tryff Development",
+        "requires_shipping": true,
+        "taxable": true,
+        "fulfillment_service": "manual",
+        "properties": null,
+        "product_id": 6616532058297,
+        "variant_id": 39618197913785
+      }
+    ],
+    "currency": "EUR",
+    "locale": "de"
+  }
+}
