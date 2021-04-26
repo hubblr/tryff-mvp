@@ -43,7 +43,6 @@ const executeSetup = async () => {
     name: carrierServiceName,
     callbackUrl: carrierServiceUrl,
   });
-  console.log("SETUP CARRIER SERVICE DONE");
 };
 exports.setupCarrierService = executeSetup;
 
