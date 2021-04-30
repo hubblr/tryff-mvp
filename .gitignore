@@ -1,3 +1,5 @@
 .idea/
-node_modules/
 **/.env
+node_modules/
+src/lambda/**/dist/
+.next/

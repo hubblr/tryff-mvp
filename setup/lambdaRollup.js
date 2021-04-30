@@ -1,11 +1,12 @@
 const path = require("path");
 const { promisify } = require("util");
 const exec = promisify(require("child_process").exec);
-const lambdaBaseDir = path.join(process.cwd(), "lambda");
 const fs = require("fs");
 const rollup = require("rollup");
 const resolve = require("rollup-plugin-node-resolve");
 const commonjs = require("rollup-plugin-commonjs");
+
+const lambdaBaseDir = path.join(process.cwd(), "src/lambda");
 
 const createDirBasedExec = (dir) => {
   return (cmd) => {

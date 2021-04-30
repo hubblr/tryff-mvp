@@ -4,16 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "update": "node update.js"
+    "setup": "node setup.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "rollup": "^2.45.2"
   },
   "dependencies": {
+    "@slack/web-api": "^6.1.0",
+    "airtable": "^0.11.0",
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
-    "find-config": "^1.0.0"
+    "find-config": "^1.0.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }

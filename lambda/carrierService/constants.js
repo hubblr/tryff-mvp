@@ -1,1 +1,0 @@
-exports.hourShift = 2;
