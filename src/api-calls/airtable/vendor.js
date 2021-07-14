@@ -12,7 +12,7 @@ exports.getAirtableVendorCheckoutOptions = ({
 
     base("Vendor Checkout Options")
       .select({
-        filterByFormula: `vendor_id = "${vendorId}"`,
+        filterByFormula: `FIND("${vendorId}", vendor_id) != 0`,
         view: "Data",
       })
       .eachPage(

@@ -99,6 +99,7 @@ exports.handler = async function (payload) {
       destinationZip,
     }),
   ]);
+
   const { name: orderName, deliveryMethod } = prepInfo[0];
   const { id: vendorTableId, vendorId: internalVendorId } = prepInfo[1];
   const localWarehouse = prepInfo[2];

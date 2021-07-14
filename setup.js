@@ -24,18 +24,6 @@ const setup = async () => {
       url: process.env.SHOPIFY_FULFILLMENT_WEBHOOK_URL,
       topic: "fulfillments/create",
     }),
-    setupWebhook({
-      url: process.env.SHOPIFY_PRODUCT_CREATE_WEBHOOK_URL,
-      topic: "products/create",
-    }),
-    setupWebhook({
-      url: process.env.SHOPIFY_PRODUCT_UPDATE_WEBHOOK_URL,
-      topic: "products/update",
-    }),
-    setupWebhook({
-      url: process.env.SHOPIFY_PRODUCT_DELETE_WEBHOOK_URL,
-      topic: "products/delete",
-    }),
   ]);
 };
 

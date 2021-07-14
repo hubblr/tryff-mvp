@@ -1,5 +1,5 @@
 const { base } = require("./base");
-const { getAirtableProductIdByVendorAndName } = require("./products");
+const { getAirtableProductByNameAndVendor } = require("./products");
 const { randomNumberString } = require("../../helpers");
 
 /* AIRTABLE ORDER CRUD */
@@ -156,7 +156,7 @@ exports.createAirtableTablesForOrder = async ({
   // create table entries for all order items
   const orderItemIds = await Promise.all(
     itemInfo.map(async ({ name: productName, quantity }) => {
-      const { id: productTableId } = await getAirtableProductIdByVendorAndName({
+      const { id: productTableId } = await getAirtableProductByNameAndVendor({
         productName,
         vendorName,
       });
